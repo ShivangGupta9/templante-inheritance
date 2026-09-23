@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+
+<head>
+
+  <title> {% block title %} MY WEBSITE {% endblock  %}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+      <!-- Child pages put their content here 
+    {% block content %}
+    {% endblock %}
+
+
+      <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+      </footer>
+</body>
+
+ </html>   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>
+    {% block title %}
+    MY WEBSITE
+    {% endblock %}
+  </title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Welcome to My Website</h1>
+
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <!-- Child pages put their content here -->
+
+  {% block content %}
+  {% endblock %}
+
+
+  <footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
