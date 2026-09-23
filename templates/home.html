@@ -1,63 +1,20 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+{% block title %}Home{% endblock %}
 
-        header {
-            background-color: #b42d2d;
-            padding: 20px;
-            text-align: center;
-        }
+{% block content %}
 
-        h1 {
-            text-align: center;
-        }
+<h1>This is the first site to perform task</h1>
+<h1>Testing phase</h1>
 
-        button {
-            background-color: #136dc4;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
+<p>This is the first site to perform task</p>
 
-        footer {
-            background-color: #200d0d;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
-</head>
+<a href="{{ url_for('login') }}">
+    <button>Go to LOGIN Page</button>
+</a>
 
-<body>
+<a href="{{ url_for('about') }}">
+    <button>Go to ABOUT Page</button>
+</a>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-
-    <h1>This is the first site to perform task</h1>
-    <h1>Testing phase</h1>
-
-    <p>This is the first site to perform task</p>
-
-    <a href="{{ url_for('login') }}">
-        <button>Go to LOGIN Page</button>
-    </a>
-
-    <a href="{{ url_for('about') }}">
-        <button>Go to ABOUT Page</button>
-    </a>
-
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
-
-</body>
-
-</html>
+{% endblock %}
