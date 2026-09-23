@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-
-    <title>This is the first site</title>
-
+    <title>Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +21,7 @@
         }
 
         button {
-            background-color: #1360c4;
+            background-color: #136dc4;
             padding: 10px 20px;
             cursor: pointer;
         }
@@ -35,7 +33,6 @@
             text-align: center;
         }
     </style>
-
 </head>
 
 <body>
@@ -45,43 +42,22 @@
     </header>
 
     <h1>This is the first site to perform task</h1>
-
     <h1>Testing phase</h1>
+
+    <p>This is the first site to perform task</p>
 
     <a href="{{ url_for('login') }}">
         <button>Go to LOGIN Page</button>
-
     </a>
-    <p>This is the first site to perform task</p>
 
     <a href="{{ url_for('about') }}">
         <button>Go to ABOUT Page</button>
     </a>
+
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
 
 </body>
 
-</html> -->
-
-{% extends "base.html" %}
-
-{% block title %}Home{% endblock %}
-
-{% block content %}
-
-<h1>This is the first site to perform task</h1>
-<h1>Testing phase</h1>
-
-<p>This is the first site to perform task</p>
-
-<a href="{{ url_for('login') }}">
-    <button>Go to LOGIN Page</button>
-</a>
-
-<a href="{{ url_for('about') }}">
-    <button>Go to ABOUT Page</button>
-</a>
-
-{% endblock %}
+</html>
