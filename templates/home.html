@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -63,4 +63,25 @@
 
 </body>
 
-</html>
+</html> -->
+
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1>This is the first site to perform task</h1>
+<h1>Testing phase</h1>
+
+<p>This is the first site to perform task</p>
+
+<a href="{{ url_for('login') }}">
+    <button>Go to LOGIN Page</button>
+</a>
+
+<a href="{{ url_for('about') }}">
+    <button>Go to ABOUT Page</button>
+</a>
+
+{% endblock %}
